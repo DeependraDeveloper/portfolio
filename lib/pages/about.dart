@@ -565,7 +565,7 @@ class About extends StatelessWidget {
                         ],
                       ),
                     ),
-
+                    verticalSpace(15),
                     // Footer
                     const Footer(),
                   ],

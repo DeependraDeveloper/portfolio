@@ -631,6 +631,7 @@ class Experience extends StatelessWidget {
                         ],
                       ),
                     ),
+                    verticalSpace(15),
                     const Footer(),
                   ],
                 ),
@@ -926,7 +927,7 @@ class Experience extends StatelessWidget {
                         ),
                       ],
                     ),
-
+                    verticalSpace(15),
                     const Footer(),
                   ],
                 ),

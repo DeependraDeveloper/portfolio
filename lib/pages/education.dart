@@ -601,7 +601,7 @@ class Education extends StatelessWidget {
                         ],
                       ),
                     ),
-
+                    verticalSpace(15),
                     const Footer(),
                   ],
                 ),
@@ -884,7 +884,7 @@ class Education extends StatelessWidget {
                         ),
                       ],
                     ),
-
+                    verticalSpace(15),
                     const Footer(),
                   ],
                 ),

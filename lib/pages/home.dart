@@ -25,6 +25,7 @@ class Home extends StatelessWidget {
                     // IMAGE
                     CircleAvatar(
                       radius: MediaQuery.of(context).size.width * 0.2,
+                      backgroundColor: Colors.transparent,
                       backgroundImage:
                           const AssetImage('assets/images/profile.jpeg'),
                     ),
@@ -167,6 +168,7 @@ class Home extends StatelessWidget {
                     // IMAGE
                     CircleAvatar(
                       radius: MediaQuery.of(context).size.width * 0.2 - 20,
+                      backgroundColor: Colors.transparent,
                       backgroundImage:
                           const AssetImage('assets/images/profile.jpeg'),
                     ),
@@ -430,7 +432,9 @@ class Home extends StatelessWidget {
                         ),
                         const CircleAvatar(
                           radius: 200,
-                          backgroundImage: AssetImage('assets/images/profile.jpeg'),
+                          backgroundColor: Colors.transparent,
+                          backgroundImage:
+                              AssetImage('assets/images/profile.jpeg'),
                         )
                       ],
                     ),

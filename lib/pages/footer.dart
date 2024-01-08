@@ -36,7 +36,7 @@ class Footer extends StatelessWidget {
         verticalSpace(10),
         ElevatedButton(
           onPressed: () async {
-            const uri = 'https://github.com/DeependraDDev/DeependraDDev';
+            const uri = 'https://github.com/DeependraDeveloper/portfolio/tree/master/lib';
             if (await launchUrl(Uri.tryParse(uri)!)) {
               await launchUrl(Uri.tryParse(uri)!);
             } else {

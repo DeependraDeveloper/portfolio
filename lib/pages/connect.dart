@@ -966,7 +966,7 @@ class _ConnectState extends State<Connect> {
                           )
                         ],
                       ),
-
+                      verticalSpace(15),
                       const Footer(),
                     ],
                   ),
@@ -1448,9 +1448,7 @@ class _ConnectState extends State<Connect> {
                           )
                         ],
                       ),
-                      const SizedBox(
-                        height: 20,
-                      ),
+                      verticalSpace(15),
                       const Footer(),
                     ],
                   ),
