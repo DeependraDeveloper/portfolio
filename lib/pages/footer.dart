@@ -15,7 +15,7 @@ class Footer extends StatelessWidget {
           child: Text(
             "© 2023 Deependra Bahadur. All rights reserved",
             style: GoogleFonts.montserrat(
-              color: Colors.white,
+              color: Theme.of(context).colorScheme.primary,
               fontSize: 14,
             ),
           ),
@@ -25,8 +25,8 @@ class Footer extends StatelessWidget {
           child: Text(
             "Version 1.0.0 | Built with Flutter 3.16",
             style: GoogleFonts.montserrat(
-              textStyle: const TextStyle(
-                color: Colors.white,
+              textStyle: TextStyle(
+                color: Theme.of(context).colorScheme.primary,
                 fontSize: 9,
                 overflow: TextOverflow.ellipsis,
               ),
@@ -36,7 +36,8 @@ class Footer extends StatelessWidget {
         verticalSpace(10),
         ElevatedButton(
           onPressed: () async {
-            const uri = 'https://github.com/DeependraDeveloper/portfolio/tree/master/lib';
+            const uri =
+                'https://github.com/DeependraDeveloper/portfolio/tree/master/lib';
             if (await launchUrl(Uri.tryParse(uri)!)) {
               await launchUrl(Uri.tryParse(uri)!);
             } else {
@@ -44,7 +45,7 @@ class Footer extends StatelessWidget {
             }
           },
           style: ElevatedButton.styleFrom(
-            backgroundColor: Colors.black,
+            backgroundColor: Theme.of(context).colorScheme.background,
             shape: RoundedRectangleBorder(
               borderRadius: BorderRadius.circular(20.0),
             ),
@@ -53,7 +54,7 @@ class Footer extends StatelessWidget {
             child: Text(
               'View Source Code',
               style: GoogleFonts.montserrat(
-                color: Colors.white,
+                color: Theme.of(context).colorScheme.primary,
                 fontSize: 9,
               ),
             ),

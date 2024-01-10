@@ -52,11 +52,11 @@ class _ConnectState extends State<Connect> {
                       context: context,
                       barrierDismissible: false,
                       builder: (BuildContext context) {
-                        return const Center(
+                        return Center(
                           child: Text(
                             'Thank You! ❤️',
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                             ),
@@ -84,7 +84,7 @@ class _ConnectState extends State<Connect> {
                           TyperAnimatedText(
                             "Connect",
                             textStyle: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 26,
                               fontWeight: FontWeight.bold,
                             ),
@@ -110,7 +110,8 @@ class _ConnectState extends State<Connect> {
                       Text(
                         'Feel free to contact me for any queries.',
                         style: GoogleFonts.montserrat(
-                            color: Colors.white, fontSize: 18),
+                            color: Theme.of(context).colorScheme.primary,
+                            fontSize: 18),
                       ),
 
                       verticalSpace(20),
@@ -119,14 +120,14 @@ class _ConnectState extends State<Connect> {
                       TextField(
                         keyboardType: TextInputType.name,
                         controller: nameController,
-                        style: const TextStyle(
-                          color: Colors.white,
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
                         ),
                         decoration: InputDecoration(
                           errorText: _validate ? "Name Can't Be Empty" : null,
                           hintText: 'Enter Your Name',
-                          hintStyle: const TextStyle(
-                            color: Colors.white,
+                          hintStyle: TextStyle(
+                            color: Theme.of(context).colorScheme.primary,
                           ),
                           enabledBorder: const OutlineInputBorder(
                             borderSide: BorderSide(
@@ -149,14 +150,14 @@ class _ConnectState extends State<Connect> {
                       TextField(
                         keyboardType: TextInputType.name,
                         controller: emailController,
-                        style: const TextStyle(
-                          color: Colors.white,
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
                         ),
                         decoration: InputDecoration(
                           errorText: _validate ? "Email Can't Be Empty" : null,
                           hintText: 'Enter Your Email',
-                          hintStyle: const TextStyle(
-                            color: Colors.white,
+                          hintStyle: TextStyle(
+                            color: Theme.of(context).colorScheme.primary,
                           ),
                           enabledBorder: const OutlineInputBorder(
                             borderSide: BorderSide(
@@ -179,15 +180,15 @@ class _ConnectState extends State<Connect> {
                       TextField(
                         keyboardType: TextInputType.name,
                         controller: subjectController,
-                        style: const TextStyle(
-                          color: Colors.white,
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
                         ),
                         decoration: InputDecoration(
                           errorText:
                               _validate ? "Subject Can't Be Empty" : null,
                           hintText: 'Subject',
-                          hintStyle: const TextStyle(
-                            color: Colors.white,
+                          hintStyle: TextStyle(
+                            color: Theme.of(context).colorScheme.primary,
                           ),
                           enabledBorder: const OutlineInputBorder(
                             borderSide: BorderSide(
@@ -210,15 +211,15 @@ class _ConnectState extends State<Connect> {
                       TextField(
                         keyboardType: TextInputType.name,
                         controller: messageController,
-                        style: const TextStyle(
-                          color: Colors.white,
+                        style: TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
                         ),
                         decoration: InputDecoration(
                           errorText:
                               _validate ? "Message Can't Be Empty" : null,
                           hintText: 'Message',
-                          hintStyle: const TextStyle(
-                            color: Colors.white,
+                          hintStyle: TextStyle(
+                            color: Theme.of(context).colorScheme.primary,
                           ),
                           enabledBorder: const OutlineInputBorder(
                             borderSide: BorderSide(
@@ -272,7 +273,7 @@ class _ConnectState extends State<Connect> {
                             child: Text(
                               'Send Message',
                               style: GoogleFonts.montserrat(
-                                color: Colors.white,
+                                color: Theme.of(context).colorScheme.primary,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -309,16 +310,19 @@ class _ConnectState extends State<Connect> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    const Icon(
+                                    Icon(
                                       Icons.mail,
                                       size: 30,
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                     verticalSpace(10),
                                     Text(
                                       'Email',
                                       style: GoogleFonts.montserrat(
-                                        color: Colors.white,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .primary,
                                         fontSize: 18,
                                         fontWeight: FontWeight.bold,
                                       ),
@@ -361,17 +365,20 @@ class _ConnectState extends State<Connect> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    const FaIcon(
+                                    FaIcon(
                                       FontAwesomeIcons.facebook,
                                       size: 24,
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                     verticalSpace(10),
                                     FittedBox(
                                       child: Text(
                                         'Facebook',
                                         style: GoogleFonts.montserrat(
-                                          color: Colors.white,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .primary,
                                           fontSize: 18,
                                           fontWeight: FontWeight.bold,
                                         ),
@@ -423,17 +430,20 @@ class _ConnectState extends State<Connect> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    const FaIcon(
+                                    FaIcon(
                                       FontAwesomeIcons.linkedin,
                                       size: 24,
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                     verticalSpace(10),
                                     FittedBox(
                                       child: Text(
                                         'LinkedIn',
                                         style: GoogleFonts.montserrat(
-                                          color: Colors.white,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .primary,
                                           fontSize: 18,
                                           fontWeight: FontWeight.bold,
                                         ),
@@ -476,17 +486,20 @@ class _ConnectState extends State<Connect> {
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
                                   children: [
-                                    const FaIcon(
+                                    FaIcon(
                                       FontAwesomeIcons.github,
                                       size: 24,
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                     verticalSpace(10),
                                     FittedBox(
                                       child: Text(
                                         'Github',
                                         style: GoogleFonts.montserrat(
-                                          color: Colors.white,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .primary,
                                           fontSize: 18,
                                           fontWeight: FontWeight.bold,
                                         ),
@@ -537,11 +550,11 @@ class _ConnectState extends State<Connect> {
                       context: context,
                       barrierDismissible: false,
                       builder: (BuildContext context) {
-                        return const Center(
+                      return  Center(
                           child: Text(
                             'Thank You! ❤️',
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                             ),
@@ -569,7 +582,7 @@ class _ConnectState extends State<Connect> {
                           TyperAnimatedText(
                             "Connect",
                             textStyle: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 26,
                               fontWeight: FontWeight.bold,
                             ),
@@ -595,7 +608,8 @@ class _ConnectState extends State<Connect> {
                       Text(
                         'Feel free to contact me for any queries.',
                         style: GoogleFonts.montserrat(
-                            color: Colors.white, fontSize: 18),
+                            color: Theme.of(context).colorScheme.primary,
+                            fontSize: 18),
                       ),
 
                       verticalSpace(20),
@@ -604,14 +618,14 @@ class _ConnectState extends State<Connect> {
                       TextField(
                         keyboardType: TextInputType.name,
                         controller: nameController,
-                        style: const TextStyle(
-                          color: Colors.white,
+                        style:  TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
                         ),
                         decoration: InputDecoration(
                           errorText: _validate ? "Name Can't Be Empty" : null,
                           hintText: 'Enter Your Name',
-                          hintStyle: const TextStyle(
-                            color: Colors.white,
+                          hintStyle:  TextStyle(
+                            color: Theme.of(context).colorScheme.primary,
                           ),
                           enabledBorder: const OutlineInputBorder(
                             borderSide: BorderSide(
@@ -633,14 +647,14 @@ class _ConnectState extends State<Connect> {
                       TextField(
                         keyboardType: TextInputType.name,
                         controller: emailController,
-                        style: const TextStyle(
-                          color: Colors.white,
+                        style:  TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
                         ),
                         decoration: InputDecoration(
                           errorText: _validate ? "Email Can't Be Empty" : null,
                           hintText: 'Enter Your Email',
-                          hintStyle: const TextStyle(
-                            color: Colors.white,
+                          hintStyle:  TextStyle(
+                            color: Theme.of(context).colorScheme.primary,
                           ),
                           enabledBorder: const OutlineInputBorder(
                             borderSide: BorderSide(
@@ -662,15 +676,15 @@ class _ConnectState extends State<Connect> {
                       TextField(
                         keyboardType: TextInputType.name,
                         controller: subjectController,
-                        style: const TextStyle(
-                          color: Colors.white,
+                        style:  TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
                         ),
                         decoration: InputDecoration(
                           errorText:
                               _validate ? "Subject Can't Be Empty" : null,
                           hintText: 'Subject',
-                          hintStyle: const TextStyle(
-                            color: Colors.white,
+                          hintStyle:  TextStyle(
+                            color: Theme.of(context).colorScheme.primary,
                           ),
                           enabledBorder: const OutlineInputBorder(
                             borderSide: BorderSide(
@@ -693,15 +707,15 @@ class _ConnectState extends State<Connect> {
                       TextField(
                         keyboardType: TextInputType.name,
                         controller: messageController,
-                        style: const TextStyle(
-                          color: Colors.white,
+                        style:  TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
                         ),
                         decoration: InputDecoration(
                           errorText:
                               _validate ? "Message Can't Be Empty" : null,
                           hintText: 'Message',
-                          hintStyle: const TextStyle(
-                            color: Colors.white,
+                          hintStyle:  TextStyle(
+                            color: Theme.of(context).colorScheme.primary,
                           ),
                           enabledBorder: const OutlineInputBorder(
                             borderSide: BorderSide(
@@ -755,7 +769,7 @@ class _ConnectState extends State<Connect> {
                             child: Text(
                               'Send Message',
                               style: GoogleFonts.montserrat(
-                                color: Colors.white,
+                                color: Theme.of(context).colorScheme.primary,
                                 fontSize: 18,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -789,16 +803,18 @@ class _ConnectState extends State<Connect> {
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  const Icon(
+                                   Icon(
                                     Icons.mail,
                                     size: 30,
-                                    color: Colors.white,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                   ),
                                   verticalSpace(10),
                                   Text(
                                     'Email',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -838,16 +854,18 @@ class _ConnectState extends State<Connect> {
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  const FaIcon(
+                                   FaIcon(
                                     FontAwesomeIcons.facebook,
                                     size: 24,
-                                    color: Colors.white,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                   ),
                                   verticalSpace(10),
                                   Text(
                                     'Facebook',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -891,16 +909,18 @@ class _ConnectState extends State<Connect> {
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  const FaIcon(
+                                   FaIcon(
                                     FontAwesomeIcons.linkedin,
                                     size: 24,
-                                    color: Colors.white,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                   ),
                                   verticalSpace(10),
                                   Text(
                                     'LinkedIn',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -938,16 +958,18 @@ class _ConnectState extends State<Connect> {
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                  const FaIcon(
+                                   FaIcon(
                                     FontAwesomeIcons.github,
                                     size: 24,
-                                    color: Colors.white,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                   ),
                                   verticalSpace(10),
                                   Text(
                                     'Github',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 18,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -994,11 +1016,11 @@ class _ConnectState extends State<Connect> {
                       context: context,
                       barrierDismissible: false,
                       builder: (BuildContext context) {
-                        return const Center(
+                        return  Center(
                           child: Text(
                             'Thank You! ❤️',
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                             ),
@@ -1026,7 +1048,7 @@ class _ConnectState extends State<Connect> {
                           TyperAnimatedText(
                             "Connect",
                             textStyle: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 40,
                               fontWeight: FontWeight.bold,
                             ),
@@ -1060,7 +1082,8 @@ class _ConnectState extends State<Connect> {
                                 Text(
                                   'Feel free to contact me for any queries.',
                                   style: GoogleFonts.montserrat(
-                                    color: Colors.white,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     fontSize: 18,
                                   ),
                                 ),
@@ -1071,8 +1094,9 @@ class _ConnectState extends State<Connect> {
                                 TextField(
                                   keyboardType: TextInputType.name,
                                   controller: nameController,
-                                  style: const TextStyle(
-                                    color: Colors.white,
+                                  style:  TextStyle(
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                   ),
                                   decoration: InputDecoration(
                                     errorText: _validate
@@ -1081,8 +1105,9 @@ class _ConnectState extends State<Connect> {
                                     fillColor: Colors.transparent,
                                     filled: true,
                                     hintText: 'Enter Your Name',
-                                    hintStyle: const TextStyle(
-                                      color: Colors.white,
+                                    hintStyle:  TextStyle(
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                     enabledBorder: const OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1104,16 +1129,18 @@ class _ConnectState extends State<Connect> {
                                 TextField(
                                   keyboardType: TextInputType.name,
                                   controller: emailController,
-                                  style: const TextStyle(
-                                    color: Colors.white,
+                                  style:  TextStyle(
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                   ),
                                   decoration: InputDecoration(
                                     errorText: _validate
                                         ? "Email Can't Be Empty"
                                         : null,
                                     hintText: 'Enter Your Email',
-                                    hintStyle: const TextStyle(
-                                      color: Colors.white,
+                                    hintStyle:  TextStyle(
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                     enabledBorder: const OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1134,16 +1161,18 @@ class _ConnectState extends State<Connect> {
                                 TextField(
                                   keyboardType: TextInputType.name,
                                   controller: subjectController,
-                                  style: const TextStyle(
-                                    color: Colors.white,
+                                  style:  TextStyle(
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                   ),
                                   decoration: InputDecoration(
                                     errorText: _validate
                                         ? "Subject Can't Be Empty"
                                         : null,
                                     hintText: 'Subject',
-                                    hintStyle: const TextStyle(
-                                      color: Colors.white,
+                                    hintStyle:  TextStyle(
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                     enabledBorder: const OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1164,16 +1193,18 @@ class _ConnectState extends State<Connect> {
                                 TextField(
                                   keyboardType: TextInputType.name,
                                   controller: messageController,
-                                  style: const TextStyle(
-                                    color: Colors.white,
+                                  style:  TextStyle(
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                   ),
                                   decoration: InputDecoration(
                                     errorText: _validate
                                         ? "Message Can't Be Empty"
                                         : null,
                                     hintText: 'Say Hi!',
-                                    hintStyle: const TextStyle(
-                                      color: Colors.white,
+                                    hintStyle:  TextStyle(
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                     enabledBorder: const OutlineInputBorder(
                                       borderSide: BorderSide(
@@ -1229,7 +1260,8 @@ class _ConnectState extends State<Connect> {
                                   child: Text(
                                     'Send Message',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 18,
                                       fontWeight: FontWeight.w500,
                                     ),
@@ -1266,16 +1298,20 @@ class _ConnectState extends State<Connect> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
                                         children: [
-                                          const Icon(
+                                           Icon(
                                             Icons.mail,
                                             size: 30,
-                                            color: Colors.white,
+                                            color: Theme.of(context)
+                                                .colorScheme
+                                                .primary,
                                           ),
                                           verticalSpace(10),
                                           Text(
                                             'Email',
                                             style: GoogleFonts.montserrat(
-                                              color: Colors.white,
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .primary,
                                               fontSize: 18,
                                               fontWeight: FontWeight.bold,
                                             ),
@@ -1315,16 +1351,20 @@ class _ConnectState extends State<Connect> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
                                         children: [
-                                          const FaIcon(
+                                           FaIcon(
                                             FontAwesomeIcons.facebook,
                                             size: 30,
-                                            color: Colors.white,
+                                            color: Theme.of(context)
+                                                .colorScheme
+                                                .primary,
                                           ),
                                           verticalSpace(10),
                                           Text(
                                             'Facebook',
                                             style: GoogleFonts.montserrat(
-                                              color: Colors.white,
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .primary,
                                               fontSize: 18,
                                               fontWeight: FontWeight.bold,
                                             ),
@@ -1368,16 +1408,20 @@ class _ConnectState extends State<Connect> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
                                         children: [
-                                          const FaIcon(
+                                           FaIcon(
                                             FontAwesomeIcons.linkedin,
                                             size: 30,
-                                            color: Colors.white,
+                                            color: Theme.of(context)
+                                                .colorScheme
+                                                .primary,
                                           ),
                                           verticalSpace(10),
                                           Text(
                                             'LinkedIn',
                                             style: GoogleFonts.montserrat(
-                                              color: Colors.white,
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .primary,
                                               fontSize: 18,
                                               fontWeight: FontWeight.bold,
                                             ),
@@ -1417,16 +1461,20 @@ class _ConnectState extends State<Connect> {
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
                                         children: [
-                                          const FaIcon(
+                                           FaIcon(
                                             FontAwesomeIcons.github,
                                             size: 30,
-                                            color: Colors.white,
+                                            color: Theme.of(context)
+                                                .colorScheme
+                                                .primary,
                                           ),
                                           verticalSpace(20),
                                           Text(
                                             'Github',
                                             style: GoogleFonts.montserrat(
-                                              color: Colors.white,
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .primary,
                                               fontSize: 18,
                                               fontWeight: FontWeight.bold,
                                             ),

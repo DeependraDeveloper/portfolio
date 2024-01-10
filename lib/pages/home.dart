@@ -40,7 +40,7 @@ class Home extends StatelessWidget {
                           TyperAnimatedText(
                             "Hi, everyone! I'm",
                             textStyle: GoogleFonts.montserrat(
-                              color: Colors.white38,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 16,
                               fontWeight: FontWeight.w500,
                             ),
@@ -59,7 +59,7 @@ class Home extends StatelessWidget {
                           WavyAnimatedText(
                             'Deependra Bahadur',
                             textStyle: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 18,
                               fontWeight: FontWeight.bold,
                             ),
@@ -78,7 +78,7 @@ class Home extends StatelessWidget {
                           child: Text(
                             '🧠 Computer Science Learner',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 14,
                             ),
                           ),
@@ -88,7 +88,7 @@ class Home extends StatelessWidget {
                           child: Text(
                             '🚀 Aspiring Software Developer',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 14,
                             ),
                           ),
@@ -98,7 +98,7 @@ class Home extends StatelessWidget {
                           child: Text(
                             '🌐 Tech Enthusiast',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 14,
                             ),
                           ),
@@ -108,7 +108,7 @@ class Home extends StatelessWidget {
                           child: Text(
                             '🌏 Community Volunteer',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 14,
                             ),
                           ),
@@ -122,7 +122,7 @@ class Home extends StatelessWidget {
                       child: Text(
                         'Looking to contact? Send me an email ✨',
                         style: GoogleFonts.montserrat(
-                          color: Colors.white,
+                          color: Theme.of(context).colorScheme.primary,
                           fontSize: 14,
                         ),
                       ),
@@ -144,7 +144,7 @@ class Home extends StatelessWidget {
                         child: Text(
                           'deependrabahadurr@gmail.com',
                           style: GoogleFonts.montserrat(
-                            color: Colors.white38,
+                            color: Theme.of(context).colorScheme.primary,
                             fontSize: 14,
                             fontWeight: FontWeight.bold,
                           ),
@@ -182,7 +182,7 @@ class Home extends StatelessWidget {
                         TyperAnimatedText(
                           "Hi, everyone! I'm",
                           textStyle: GoogleFonts.montserrat(
-                            color: Colors.white38,
+                            color: Theme.of(context).colorScheme.primary,
                             fontSize: 30,
                             fontWeight: FontWeight.w500,
                           ),
@@ -197,7 +197,7 @@ class Home extends StatelessWidget {
                         WavyAnimatedText(
                           'Deependra Bahadur',
                           textStyle: GoogleFonts.montserrat(
-                            color: Colors.white,
+                            color: Theme.of(context).colorScheme.primary,
                             fontSize: 36,
                             fontWeight: FontWeight.bold,
                           ),
@@ -220,7 +220,8 @@ class Home extends StatelessWidget {
                                 child: Text(
                                   '🧠 Computer Science Learner',
                                   style: GoogleFonts.montserrat(
-                                    color: Colors.white,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     fontSize: 18,
                                   ),
                                 ),
@@ -230,7 +231,8 @@ class Home extends StatelessWidget {
                                 child: Text(
                                   '🚀 Aspiring Software Developer',
                                   style: GoogleFonts.montserrat(
-                                    color: Colors.white,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     fontSize: 18,
                                   ),
                                 ),
@@ -247,7 +249,8 @@ class Home extends StatelessWidget {
                                 child: Text(
                                   '🌐 Tech Enthusiast',
                                   style: GoogleFonts.montserrat(
-                                    color: Colors.white,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     fontSize: 18,
                                   ),
                                 ),
@@ -257,7 +260,8 @@ class Home extends StatelessWidget {
                                 child: Text(
                                   '🌏 Community Volunteer',
                                   style: GoogleFonts.montserrat(
-                                    color: Colors.white,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     fontSize: 18,
                                   ),
                                 ),
@@ -273,7 +277,7 @@ class Home extends StatelessWidget {
                     Text(
                       'Looking to contact? Send me an email ✨',
                       style: GoogleFonts.montserrat(
-                        color: Colors.white,
+                        color: Theme.of(context).colorScheme.primary,
                         fontSize: 16,
                       ),
                     ),
@@ -292,7 +296,7 @@ class Home extends StatelessWidget {
                       child: Text(
                         'deependrabahadurr@gmail.com',
                         style: GoogleFonts.montserrat(
-                          color: Colors.white38,
+                          color: Theme.of(context).colorScheme.primary,
                           fontSize: 14,
                           fontWeight: FontWeight.bold,
                         ),
@@ -322,9 +326,12 @@ class Home extends StatelessWidget {
                                 TyperAnimatedText(
                                   "Hi, everyone! I'm.",
                                   textStyle: GoogleFonts.montserrat(
-                                    color: Colors.white38,
-                                    fontSize: 38,
-                                    fontWeight: FontWeight.bold,
+                                    textStyle: TextStyle(
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
+                                      fontSize: 38,
+                                      fontWeight: FontWeight.bold,
+                                    ),
                                   ),
                                 ),
                               ],
@@ -338,7 +345,8 @@ class Home extends StatelessWidget {
                                 WavyAnimatedText(
                                   'Deependra Bahadur',
                                   textStyle: GoogleFonts.montserrat(
-                                    color: Colors.white,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     fontSize: 44,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -359,7 +367,9 @@ class Home extends StatelessWidget {
                                     Text(
                                       '🧠 Computer Science Learner',
                                       style: GoogleFonts.montserrat(
-                                        color: Colors.white,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .primary,
                                         fontSize: 21,
                                       ),
                                     ),
@@ -367,7 +377,9 @@ class Home extends StatelessWidget {
                                     Text(
                                       '🚀 Aspiring Software Developer',
                                       style: GoogleFonts.montserrat(
-                                        color: Colors.white,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .primary,
                                         fontSize: 21,
                                       ),
                                     ),
@@ -382,7 +394,9 @@ class Home extends StatelessWidget {
                                     Text(
                                       '🌐 Tech Enthusiast',
                                       style: GoogleFonts.montserrat(
-                                        color: Colors.white,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .primary,
                                         fontSize: 21,
                                       ),
                                     ),
@@ -390,7 +404,9 @@ class Home extends StatelessWidget {
                                     Text(
                                       '🌏 Community Volunteer',
                                       style: GoogleFonts.montserrat(
-                                        color: Colors.white,
+                                        color: Theme.of(context)
+                                            .colorScheme
+                                            .primary,
                                         fontSize: 21,
                                       ),
                                     ),
@@ -404,7 +420,7 @@ class Home extends StatelessWidget {
                             Text(
                               'Looking to contact? Send me an email ✨',
                               style: GoogleFonts.montserrat(
-                                color: Colors.white,
+                                color: Theme.of(context).colorScheme.primary,
                                 fontSize: 18,
                               ),
                             ),
@@ -422,7 +438,7 @@ class Home extends StatelessWidget {
                               child: Text(
                                 'deependrabahadurr@gmail.com',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white38,
+                                  color: Theme.of(context).colorScheme.primary,
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                 ),

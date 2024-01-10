@@ -30,8 +30,8 @@ class About extends StatelessWidget {
                         TyperAnimatedText(
                           "About",
                           textStyle: GoogleFonts.montserrat(
-                            textStyle: const TextStyle(
-                              color: Colors.white,
+                            textStyle: TextStyle(
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 26,
                               fontWeight: FontWeight.bold,
                               letterSpacing: .5,
@@ -47,8 +47,8 @@ class About extends StatelessWidget {
                     Text(
                       'Get to know my background, goals, and interests.',
                       style: GoogleFonts.montserrat(
-                        textStyle: const TextStyle(
-                          color: Colors.grey,
+                        textStyle: TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
                           fontSize: 18,
                           fontWeight: FontWeight.normal,
                         ),
@@ -73,7 +73,7 @@ class About extends StatelessWidget {
                           Text(
                             'Introduction',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                             ),
@@ -84,7 +84,7 @@ class About extends StatelessWidget {
                             child: Text(
                               "Hey there! 👋 I'm a BSc Computer Science graduate with a passion for crafting tech solutions that bridge the gap between imagination and reality. With over 1.5 years of hands-on experience, I've delved into a diverse tech landscape, wielding skills in JavaScript, Node.js, MongoDB, and Postman to sculpt robust backend architectures.My journey isn't confined to backend realms alone—I groove in HTML, CSS, and Flutter, waltzing effortlessly between frontend finesse and mobile magic. Whether it's breathing life into sleek interfaces or sculpting backend fortresses, I've reveled in collaborating with both frontend maestros and backend wizards, concocting seamless software symphonies.AWS S3 and Git are my trusty sidekicks, empowering me to sculpt and deploy solutions that dance harmoniously in the cloud. Eager to explore, innovate, and continuously evolve, I thrive on pushing boundaries, coding the future, and painting pixels with purpose.Let's build, innovate, and code the world into a brighter tomorrow! ✨🚀",
                               style: GoogleFonts.montserrat(
-                                color: Colors.white,
+                                color: Theme.of(context).colorScheme.primary,
                                 fontWeight: FontWeight.w300,
                                 fontSize: 14,
                               ),
@@ -112,7 +112,7 @@ class About extends StatelessWidget {
                           Text(
                             'Background',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                             ),
@@ -121,7 +121,7 @@ class About extends StatelessWidget {
                           // Background sub heading
                           Text(
                             'These are some intriguing facts about my personal details.',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(10),
                           Expanded(
@@ -131,35 +131,35 @@ class About extends StatelessWidget {
                                 FittedBox(
                                   child: Text(
                                     '👨‍💼 Name is Deependra Bahadur R',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                                 verticalSpace(10),
                                 FittedBox(
                                   child: Text(
                                     '🎊 Born on December 20, 1999',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                                 verticalSpace(10),
                                 FittedBox(
                                   child: Text(
                                     '🌍 Lives in India(Bangalore)(GMT+5:30)',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                                 verticalSpace(10),
                                 FittedBox(
                                   child: Text(
                                     '👨 Gender is Male (He/Him/His)',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                                 verticalSpace(10),
                                 FittedBox(
                                   child: Text(
                                     '👨‍💻 Works in TingTing',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                               ],
@@ -186,7 +186,7 @@ class About extends StatelessWidget {
                           Text(
                             'Goals',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                             ),
@@ -194,7 +194,7 @@ class About extends StatelessWidget {
                           verticalSpace(15),
                           Text(
                             "It's been a few years since I stepped into the tech space. Having achieved significant milestones, I`m now dedicated to following these targets.",
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(10),
                           Expanded(
@@ -204,28 +204,28 @@ class About extends StatelessWidget {
                                 FittedBox(
                                   child: Text(
                                     '💻 Follow the Software Developer Path',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                                 verticalSpace(10),
                                 FittedBox(
                                   child: Text(
                                     '🤖 Follow the AI Engineer Path',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                                 verticalSpace(10),
                                 FittedBox(
                                   child: Text(
                                     '📱  Build a Tech Community',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                                 verticalSpace(10),
                                 FittedBox(
                                   child: Text(
                                     '🎓 Pursue a Master`s Degree',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                               ],
@@ -253,7 +253,7 @@ class About extends StatelessWidget {
                           Text(
                             'Interests',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 16,
                               fontWeight: FontWeight.bold,
                             ),
@@ -262,7 +262,7 @@ class About extends StatelessWidget {
                           // Interests sub heading
                           Text(
                             'Let me tell you about the passions that define me.',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(10),
                           Expanded(
@@ -272,35 +272,35 @@ class About extends StatelessWidget {
                                 FittedBox(
                                   child: Text(
                                     '🏏 Playing Video Games and Sports',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                                 verticalSpace(10),
                                 FittedBox(
                                   child: Text(
                                     '🎶 Listening to Music and Podcasts',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                                 verticalSpace(10),
                                 FittedBox(
                                   child: Text(
                                     '🛵 Love to Travel and Explore New Places',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                                 verticalSpace(10),
                                 FittedBox(
                                   child: Text(
                                     '📚 Studying New Things and Meeting New People',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                                 verticalSpace(10),
                                 FittedBox(
                                   child: Text(
                                     '💽 Loves to code and build new things',
-                                    style: mediumTextStyle(),
+                                    style: mediumTextStyle(context),
                                   ),
                                 ),
                               ],
@@ -329,8 +329,8 @@ class About extends StatelessWidget {
                         TyperAnimatedText(
                           "About",
                           textStyle: GoogleFonts.montserrat(
-                            textStyle: const TextStyle(
-                              color: Colors.white,
+                            textStyle: TextStyle(
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 26,
                               fontWeight: FontWeight.bold,
                               letterSpacing: .5,
@@ -346,8 +346,8 @@ class About extends StatelessWidget {
                     Text(
                       'Get to know my background, goals, and interests.',
                       style: GoogleFonts.montserrat(
-                        textStyle: const TextStyle(
-                          color: Colors.grey,
+                        textStyle: TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
                           fontSize: 18,
                           fontWeight: FontWeight.normal,
                         ),
@@ -372,7 +372,7 @@ class About extends StatelessWidget {
                           Text(
                             'Introduction',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                             ),
@@ -383,7 +383,7 @@ class About extends StatelessWidget {
                             child: Text(
                               "Hey there! 👋 I'm a BSc Computer Science graduate with a passion for crafting tech solutions that bridge the gap between imagination and reality. With over 1.5 years of hands-on experience, I've delved into a diverse tech landscape, wielding skills in JavaScript, Node.js, MongoDB, and Postman to sculpt robust backend architectures.My journey isn't confined to backend realms alone—I groove in HTML, CSS, and Flutter, waltzing effortlessly between frontend finesse and mobile magic. Whether it's breathing life into sleek interfaces or sculpting backend fortresses, I've reveled in collaborating with both frontend maestros and backend wizards, concocting seamless software symphonies.AWS S3 and Git are my trusty sidekicks, empowering me to sculpt and deploy solutions that dance harmoniously in the cloud. Eager to explore, innovate, and continuously evolve, I thrive on pushing boundaries, coding the future, and painting pixels with purpose.Let's build, innovate, and code the world into a brighter tomorrow! ✨🚀",
                               style: GoogleFonts.montserrat(
-                                color: Colors.white,
+                                color: Theme.of(context).colorScheme.primary,
                                 fontWeight: FontWeight.w300,
                               ),
                             ),
@@ -410,7 +410,7 @@ class About extends StatelessWidget {
                           Text(
                             'Background',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                             ),
@@ -419,7 +419,7 @@ class About extends StatelessWidget {
                           // Background sub heading
                           Text(
                             'These are some intriguing facts about my personal details.',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(20),
                           Column(
@@ -427,27 +427,27 @@ class About extends StatelessWidget {
                             children: [
                               Text(
                                 '👨‍💼 Name is Deependra Bahadur R',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '🎊 Born on December 20, 1999',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '🌍 Lives in India(Bangalore)(GMT+5:30)',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '👨 Gender is Male (He/Him/His)',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '👨‍💻 Works in TingTing',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                             ],
                           )
@@ -472,7 +472,7 @@ class About extends StatelessWidget {
                           Text(
                             'Goals',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                             ),
@@ -482,27 +482,27 @@ class About extends StatelessWidget {
                           ),
                           Text(
                             "It's been a few years since I stepped into the tech space. Having achieved significant milestones, I`m now dedicated to following these targets.",
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(20),
                           Text(
                             '💻 Follow the Software Developer Path',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(10),
                           Text(
                             '🤖 Follow the AI Engineer Path',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(10),
                           Text(
                             '📱  Build a Tech Community',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(10),
                           Text(
                             '🎓 Pursue a Master`s Degree',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                         ],
                       ),
@@ -526,7 +526,7 @@ class About extends StatelessWidget {
                           Text(
                             'Interests',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                             ),
@@ -535,32 +535,32 @@ class About extends StatelessWidget {
                           // Interests sub heading
                           Text(
                             'Let me tell you about the passions that define me.',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(20),
                           Text(
                             '🏏 Playing Video Games and Sports',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(10),
                           Text(
                             '🎶 Listening to Music and Podcasts',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(10),
                           Text(
                             '🛵 Love to Travel and Explore New Places',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(10),
                           Text(
                             '📚 Studying New Things and Meeting New People',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           ),
                           verticalSpace(10),
                           Text(
                             '💽 Loves to code and build new things',
-                            style: mediumTextStyle(),
+                            style: mediumTextStyle(context),
                           )
                         ],
                       ),
@@ -585,8 +585,8 @@ class About extends StatelessWidget {
                         TyperAnimatedText(
                           "About",
                           textStyle: GoogleFonts.montserrat(
-                            textStyle: const TextStyle(
-                              color: Colors.white,
+                            textStyle: TextStyle(
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 40,
                               fontWeight: FontWeight.bold,
                             ),
@@ -600,8 +600,8 @@ class About extends StatelessWidget {
                     Text(
                       'Get to know my background, goals, and interests.',
                       style: GoogleFonts.montserrat(
-                        textStyle: const TextStyle(
-                          color: Colors.grey,
+                        textStyle: TextStyle(
+                          color: Theme.of(context).colorScheme.primary,
                           fontSize: 18,
                           fontWeight: FontWeight.normal,
                         ),
@@ -626,7 +626,7 @@ class About extends StatelessWidget {
                               Text(
                                 'Introduction',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -637,7 +637,8 @@ class About extends StatelessWidget {
                                   child: Text(
                                     "Hey there! 👋 I'm a BSc Computer Science graduate with a passion for crafting tech solutions that bridge the gap between imagination and reality. With over 1.5 years of hands-on experience, I've delved into a diverse tech landscape, wielding skills in JavaScript, Node.js, MongoDB, and Postman to sculpt robust backend architectures.My journey isn't confined to backend realms alone—I groove in HTML, CSS, and Flutter, waltzing effortlessly between frontend finesse and mobile magic. Whether it's breathing life into sleek interfaces or sculpting backend fortresses, I've reveled in collaborating with both frontend maestros and backend wizards, concocting seamless software symphonies.AWS S3 and Git are my trusty sidekicks, empowering me to sculpt and deploy solutions that dance harmoniously in the cloud. Eager to explore, innovate, and continuously evolve, I thrive on pushing boundaries, coding the future, and painting pixels with purpose.Let's build, innovate, and code the world into a brighter tomorrow! ✨🚀",
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontWeight: FontWeight.w300,
                                     ),
                                   ),
@@ -661,7 +662,7 @@ class About extends StatelessWidget {
                               Text(
                                 'Background',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -669,32 +670,32 @@ class About extends StatelessWidget {
                               verticalSpace(20),
                               Text(
                                 'These are some intriguing facts about my personal details.',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(20),
                               Text(
                                 '👨‍💼 Name is Deependra Bahadur R',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '📆 Born on December 20, 1999',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '🌏 Lives in India(Bangalore)(GMT+5:30)',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '👦🏽 Gender is Male (He/Him/His)',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '💼 Works in TingTing',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               )
                             ],
                           ),
@@ -718,32 +719,32 @@ class About extends StatelessWidget {
                             children: [
                               Text(
                                 'Goals',
-                                style: largeTextStyle(),
+                                style: largeTextStyle(context),
                               ),
                               verticalSpace(20),
                               Text(
                                 'It`s been a few years since I stepped into the tech space. Having achieved significant milestones, I`m now dedicated to following these targets.',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(20),
                               Text(
                                 '🤖 Follow the AI Engineer Path',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '💻 Follow the Software Developer Path',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '🚩 Build a Tech Community',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '🎓 Pursue a Master`s Degree',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               )
                             ],
                           ),
@@ -762,36 +763,36 @@ class About extends StatelessWidget {
                             children: [
                               Text(
                                 'Interests',
-                                style: largeTextStyle(),
+                                style: largeTextStyle(context),
                               ),
                               verticalSpace(20),
                               Text(
                                   'Let me tell you about the passions that define me.',
-                                  style: mediumTextStyle()),
+                                  style: mediumTextStyle(context)),
                               verticalSpace(20),
                               Text(
                                 '🎬 Playing Video Games and Sports',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '🎧 Listening to Music and Podcasts',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '🛵 Love to Travel and Explore New Places',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '📚 Studying New Things and Meeting New People',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               ),
                               verticalSpace(10),
                               Text(
                                 '🎤 Loves to code and build new things',
-                                style: mediumTextStyle(),
+                                style: mediumTextStyle(context),
                               )
                             ],
                           ),

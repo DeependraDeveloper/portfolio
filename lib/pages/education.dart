@@ -29,9 +29,11 @@ class Education extends StatelessWidget {
                           TyperAnimatedText(
                             "Education",
                             textStyle: GoogleFonts.montserrat(
-                              color: Colors.white,
-                              fontSize: 26,
-                              fontWeight: FontWeight.bold,
+                              textStyle: TextStyle(
+                                color: Theme.of(context).colorScheme.primary,
+                                fontSize: 26,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ),
                         ],
@@ -45,7 +47,7 @@ class Education extends StatelessWidget {
                       child: Text(
                         'Discover my academic qualifications & institutions.',
                         style: GoogleFonts.montserrat(
-                          color: Colors.grey,
+                          color: Theme.of(context).colorScheme.primary,
                           fontSize: 17,
                           fontWeight: FontWeight.normal,
                         ),
@@ -59,7 +61,7 @@ class Education extends StatelessWidget {
                       child: Text(
                         '👨‍🎓  Academic Qualifications',
                         style: GoogleFonts.montserrat(
-                          color: Colors.white,
+                          color: Theme.of(context).colorScheme.primary,
                           fontSize: 20,
                           fontWeight: FontWeight.bold,
                         ),
@@ -96,7 +98,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     'Bsc Computer Science',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -106,7 +109,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     'Aims Institute',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -114,7 +118,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     '2018-2021',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -122,7 +127,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     'CGPA: 8.5',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -161,7 +167,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     'PCMB',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -171,7 +178,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     'MES College, Bangalore',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -179,7 +187,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     '2016-2018',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -187,7 +196,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     'CGPA: 6.8',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -227,7 +237,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     'Primary school',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -237,7 +248,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     'Sri Vidya Kendra, Bangalore',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -245,7 +257,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     '2004-2016',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -253,7 +266,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     'CGPA: 9.5',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -292,7 +306,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     'Coding Bootcamp',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -302,7 +317,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     'FunctionUp, Bangalore',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -310,7 +326,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     '2022-2022',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -318,7 +335,8 @@ class Education extends StatelessWidget {
                                   child: Text(
                                     'CGPA: 8.5',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -347,7 +365,7 @@ class Education extends StatelessWidget {
                         TyperAnimatedText(
                           "Education",
                           textStyle: GoogleFonts.montserrat(
-                            color: Colors.white,
+                            color: Theme.of(context).colorScheme.primary,
                             fontSize: 32,
                             fontWeight: FontWeight.bold,
                           ),
@@ -361,7 +379,7 @@ class Education extends StatelessWidget {
                     Text(
                       'Discover my academic qualifications and institutions.',
                       style: GoogleFonts.montserrat(
-                        color: Colors.grey,
+                        color: Theme.of(context).colorScheme.primary,
                         fontSize: 20,
                         fontWeight: FontWeight.normal,
                       ),
@@ -373,7 +391,7 @@ class Education extends StatelessWidget {
                     Text(
                       '👨‍🎓  Academic Qualifications',
                       style: GoogleFonts.montserrat(
-                        color: Colors.white,
+                        color: Theme.of(context).colorScheme.primary,
                         fontSize: 24,
                         fontWeight: FontWeight.bold,
                       ),
@@ -406,7 +424,7 @@ class Education extends StatelessWidget {
                               Text(
                                 'Bsc Computer Science',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -414,19 +432,19 @@ class Education extends StatelessWidget {
                               Text(
                                 'Aims Institute',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
                               Text(
                                 '2018-2021',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
                               Text(
                                 'CGPA: 8.5',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
                             ],
@@ -462,7 +480,7 @@ class Education extends StatelessWidget {
                               Text(
                                 'PCMB',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -470,19 +488,19 @@ class Education extends StatelessWidget {
                               Text(
                                 'MES College, Bangalore',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
                               Text(
                                 '2016-2018',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
                               Text(
                                 'CGPA: 6.8',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
                             ],
@@ -517,7 +535,7 @@ class Education extends StatelessWidget {
                               Text(
                                 'Primary school',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -525,19 +543,19 @@ class Education extends StatelessWidget {
                               Text(
                                 'Sri Vidya Kendra, Bangalore',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
                               Text(
                                 '2004-2016',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
                               Text(
                                 'CGPA: 9.5',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
                             ],
@@ -573,7 +591,7 @@ class Education extends StatelessWidget {
                               Text(
                                 'Coding Bootcamp',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                   fontSize: 20,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -581,19 +599,19 @@ class Education extends StatelessWidget {
                               Text(
                                 'FunctionUp, Bangalore',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
                               Text(
                                 '2022-2022',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
                               Text(
                                 'CGPA: 8.5',
                                 style: GoogleFonts.montserrat(
-                                  color: Colors.white,
+                                  color: Theme.of(context).colorScheme.primary,
                                 ),
                               ),
                             ],
@@ -620,7 +638,7 @@ class Education extends StatelessWidget {
                         TyperAnimatedText(
                           "Education",
                           textStyle: GoogleFonts.montserrat(
-                            color: Colors.white,
+                            color: Theme.of(context).colorScheme.primary,
                             fontSize: 40,
                             fontWeight: FontWeight.bold,
                           ),
@@ -634,7 +652,7 @@ class Education extends StatelessWidget {
                     Text(
                       'Discover my academic qualifications and institutions.',
                       style: GoogleFonts.montserrat(
-                        color: Colors.grey,
+                        color: Theme.of(context).colorScheme.primary,
                         fontSize: 20,
                         fontWeight: FontWeight.normal,
                       ),
@@ -646,7 +664,7 @@ class Education extends StatelessWidget {
                     Text(
                       '👨‍🎓  Academic Qualifications',
                       style: GoogleFonts.montserrat(
-                        color: Colors.white,
+                        color: Theme.of(context).colorScheme.primary,
                         fontSize: 30,
                         fontWeight: FontWeight.bold,
                       ),
@@ -683,7 +701,7 @@ class Education extends StatelessWidget {
                                   Text(
                                     'Bsc Computer Science',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -691,19 +709,19 @@ class Education extends StatelessWidget {
                                   Text(
                                     'Aims Institute',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     '2018-2021',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     'CGPA: 8.5',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ],
@@ -738,7 +756,7 @@ class Education extends StatelessWidget {
                                   Text(
                                     'PCMB',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -746,19 +764,19 @@ class Education extends StatelessWidget {
                                   Text(
                                     'MES College, Bangalore',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     '2016-2018',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     'CGPA: 6.8',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ],
@@ -799,7 +817,7 @@ class Education extends StatelessWidget {
                                   Text(
                                     'Primary school',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -807,19 +825,19 @@ class Education extends StatelessWidget {
                                   Text(
                                     'Sri Vidya Kendra, Bangalore',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     '2004-2016',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     'CGPA: 9.5',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ],
@@ -854,7 +872,7 @@ class Education extends StatelessWidget {
                                   Text(
                                     'Coding Bootcamp',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -862,19 +880,19 @@ class Education extends StatelessWidget {
                                   Text(
                                     'FunctionUp, Bangalore',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     '2022-2022',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     'CGPA: 8.5',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.white,
+                                      color: Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ],

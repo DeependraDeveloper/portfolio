@@ -1,15 +1,17 @@
 // ignore_for_file: non_constant_identifier_names
-
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:lottie/lottie.dart';
 import 'package:personalportfolio/bloc/form/form_bloc.dart';
+import 'package:personalportfolio/bloc/theme/theme_bloc.dart';
 import 'package:personalportfolio/pages/about.dart';
 import 'package:personalportfolio/pages/connect.dart';
 import 'package:personalportfolio/pages/education.dart';
 import 'package:personalportfolio/pages/experience.dart';
 import 'package:personalportfolio/pages/home.dart';
+import 'package:personalportfolio/theme/dark_mode.dart';
+import 'package:personalportfolio/theme/light_mode.dart';
 import 'package:personalportfolio/widgets/buttons.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:personalportfolio/widgets/spaces.dart';
@@ -24,19 +26,29 @@ class MyApp extends StatelessWidget {
         BlocProvider(
           create: (context) => FormBloc(),
         ),
-      ],
-      child: MaterialApp(
-        themeMode: ThemeMode.dark,
-        debugShowCheckedModeBanner: false,
-        title: 'Portfolio',
-        theme: ThemeData(
-          brightness: Brightness.light,
-          useMaterial3: true,
-          appBarTheme: const AppBarTheme(
-            backgroundColor: Colors.black,
-          ),
+        BlocProvider(
+          create: (context) => ThemeBloc(),
         ),
-        home: const MyHomePage(),
+      ],
+      child: BlocBuilder<ThemeBloc, ThemeMode>(
+        builder: (context, mode) {
+          return MaterialApp(
+            debugShowCheckedModeBanner: false,
+            title: 'Portfolio',
+            theme: ThemeData(
+              colorScheme: lightTheme.colorScheme,
+              brightness: Brightness.light,
+              useMaterial3: true,
+            ),
+            darkTheme: ThemeData(
+              brightness: Brightness.dark,
+              colorScheme: darkTheme.colorScheme,
+              useMaterial3: true,
+            ),
+            themeMode: mode,
+            home: const MyHomePage(),
+          );
+        },
       ),
     );
   }
@@ -66,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
         if (snapshot.connectionState == ConnectionState.waiting &&
             pgStr == "Home") {
           return Scaffold(
-            backgroundColor: Colors.black,
+            backgroundColor: Theme.of(context).colorScheme.background,
             body: Center(
               child: SizedBox(
                 height: MediaQuery.of(context).size.height / 2,
@@ -85,12 +97,12 @@ class _MyHomePageState extends State<MyHomePage> {
                 // Mobile View
                 return Scaffold(
                   drawer: Drawer(
-                    backgroundColor: Colors.black,
+                    backgroundColor: Theme.of(context).colorScheme.background,
                     child: ListView(
                       children: [
                         DrawerHeader(
-                          decoration: const BoxDecoration(
-                            color: Colors.black,
+                          decoration: BoxDecoration(
+                            color: Theme.of(context).colorScheme.background,
                           ),
                           curve: Curves.fastOutSlowIn,
                           duration: const Duration(seconds: 2),
@@ -107,7 +119,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             accountName: Text(
                               "DeependraDDev",
                               style: GoogleFonts.montserrat(
-                                color: Colors.white,
+                                color: Theme.of(context).colorScheme.primary,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -115,7 +127,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             accountEmail: Text(
                               "deependrabahadurr@gmail.com",
                               style: GoogleFonts.montserrat(
-                                color: Colors.white,
+                                color: Theme.of(context).colorScheme.primary,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -129,11 +141,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         ListTile(
-                          leading: const FaIcon(FontAwesomeIcons.user),
+                          leading: FaIcon(
+                            FontAwesomeIcons.user,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
                           title: Text(
                             ' About ',
                             style: GoogleFonts.montserrat(
-                              color: about_color,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
                             ),
@@ -151,13 +166,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           },
                         ),
                         ListTile(
-                          leading: const FaIcon(
+                          leading: FaIcon(
                             FontAwesomeIcons.graduationCap,
+                            color: Theme.of(context).colorScheme.primary,
                           ),
                           title: Text(
                             ' Education ',
                             style: GoogleFonts.montserrat(
-                              color: education_color,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
                             ),
@@ -175,11 +191,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           },
                         ),
                         ListTile(
-                          leading: const FaIcon(FontAwesomeIcons.briefcase),
+                          leading: FaIcon(
+                            FontAwesomeIcons.briefcase,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
                           title: Text(
                             ' Experience ',
                             style: GoogleFonts.montserrat(
-                              color: experience_color,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
                             ),
@@ -197,11 +216,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           },
                         ),
                         ListTile(
-                          leading: const FaIcon(FontAwesomeIcons.addressCard),
+                          leading: FaIcon(
+                            FontAwesomeIcons.addressCard,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
                           title: Text(
                             ' Connect ',
                             style: GoogleFonts.montserrat(
-                              color: connect_color,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
                             ),
@@ -225,12 +247,12 @@ class _MyHomePageState extends State<MyHomePage> {
                     preferredSize: const Size(double.infinity, 65),
                     child: AppBar(
                       elevation: 0,
-                      backgroundColor: Colors.black,
+                      backgroundColor: Theme.of(context).colorScheme.background,
                       leading: Builder(
                         builder: (context) => IconButton(
-                          icon: const Icon(
+                          icon: Icon(
                             Icons.menu,
-                            color: Colors.white,
+                            color: Theme.of(context).colorScheme.primary,
                           ),
                           onPressed: () => Scaffold.of(context).openDrawer(),
                         ),
@@ -238,7 +260,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       bottom: PreferredSize(
                         preferredSize: const Size(double.infinity, 1),
                         child: Container(
-                          color: const Color.fromARGB(160, 255, 255, 255),
+                          color: Theme.of(context).colorScheme.primary,
                           height: 0.3,
                         ),
                       ),
@@ -246,20 +268,28 @@ class _MyHomePageState extends State<MyHomePage> {
                           ? []
                           : [
                               iconButtonWithNav(
-                                "https://github.com/deependraDDev",
-                                FontAwesomeIcons.github,
-                              ),
-                              horizontalSpace(15),
+                                  "https://github.com/deependraDDev",
+                                  FontAwesomeIcons.github,
+                                  context),
+                              horizontalSpace(10),
                               iconButtonWithNav(
-                                "https://in.linkedin.com/in/deependra-bahadur-r-b69904221",
-                                FontAwesomeIcons.linkedin,
+                                  "https://in.linkedin.com/in/deependra-bahadur-r-b69904221",
+                                  FontAwesomeIcons.linkedin,
+                                  context),
+                              horizontalSpace(10),
+                              IconButton(
+                                icon: const Icon(Icons.brightness_4),
+                                onPressed: () {
+                                  context
+                                      .read<ThemeBloc>()
+                                      .add(const ToggleTheme());
+                                },
                               ),
-                              horizontalSpace(15),
                             ],
                     ),
                   ),
                   body: Container(
-                    color: Colors.black,
+                    color: Theme.of(context).colorScheme.background,
                     child: page,
                   ),
                 );
@@ -267,7 +297,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 // Tablet View
                 return Scaffold(
                   drawer: Drawer(
-                    backgroundColor: Colors.black,
+                    backgroundColor: Theme.of(context).colorScheme.background,
                     child: ListView(
                       children: [
                         DrawerHeader(
@@ -283,13 +313,13 @@ class _MyHomePageState extends State<MyHomePage> {
                           duration: const Duration(seconds: 2),
                           child: UserAccountsDrawerHeader(
                             decoration: BoxDecoration(
-                              color: Colors.black,
+                              color: Theme.of(context).colorScheme.background,
                               borderRadius: BorderRadius.circular(10),
                             ),
                             accountName: Text(
                               "DeependraDDev",
                               style: GoogleFonts.montserrat(
-                                color: Colors.white,
+                                color: Theme.of(context).colorScheme.primary,
                                 fontSize: 16,
                                 fontWeight: FontWeight.w500,
                               ),
@@ -297,7 +327,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             accountEmail: Text(
                               "deependrabahadurr@gmail.com",
                               style: GoogleFonts.montserrat(
-                                color: Colors.white,
+                                color: Theme.of(context).colorScheme.primary,
                                 fontWeight: FontWeight.w400,
                               ),
                             ),
@@ -311,11 +341,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         ListTile(
-                          leading: const FaIcon(FontAwesomeIcons.user),
+                          leading: FaIcon(
+                            FontAwesomeIcons.user,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
                           title: Text(
                             ' About ',
                             style: GoogleFonts.montserrat(
-                              color: about_color,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
                             ),
@@ -333,13 +366,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           },
                         ),
                         ListTile(
-                          leading: const FaIcon(
+                          leading: FaIcon(
                             FontAwesomeIcons.graduationCap,
+                            color: Theme.of(context).colorScheme.primary,
                           ),
                           title: Text(
                             ' Education ',
                             style: GoogleFonts.montserrat(
-                              color: education_color,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
                             ),
@@ -357,11 +391,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           },
                         ),
                         ListTile(
-                          leading: const FaIcon(FontAwesomeIcons.briefcase),
+                          leading: FaIcon(
+                            FontAwesomeIcons.briefcase,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
                           title: Text(
                             ' Experience ',
                             style: GoogleFonts.montserrat(
-                              color: experience_color,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
                             ),
@@ -379,11 +416,14 @@ class _MyHomePageState extends State<MyHomePage> {
                           },
                         ),
                         ListTile(
-                          leading: const FaIcon(FontAwesomeIcons.addressCard),
+                          leading: FaIcon(
+                            FontAwesomeIcons.addressCard,
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
                           title: Text(
                             ' Connect ',
                             style: GoogleFonts.montserrat(
-                              color: connect_color,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 18,
                               fontWeight: FontWeight.w500,
                             ),
@@ -408,9 +448,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     child: AppBar(
                       leading: Builder(
                         builder: (context) => IconButton(
-                          icon: const Icon(
+                          icon: Icon(
                             Icons.menu,
-                            color: Colors.white,
+                            color: Theme.of(context).colorScheme.primary,
                           ),
                           onPressed: () => Scaffold.of(context).openDrawer(),
                         ),
@@ -418,7 +458,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       bottom: PreferredSize(
                         preferredSize: const Size(double.infinity, 1),
                         child: Container(
-                          color: const Color.fromARGB(160, 255, 255, 255),
+                          color: Theme.of(context).colorScheme.primary,
                           height: 0.3,
                         ),
                       ),
@@ -426,18 +466,24 @@ class _MyHomePageState extends State<MyHomePage> {
                         iconButtonWithNav(
                           "https://github.com/deependraDDev",
                           FontAwesomeIcons.github,
+                          context,
                         ),
-                        horizontalSpace(15),
                         iconButtonWithNav(
                           "https://in.linkedin.com/in/deependra-bahadur-r-b69904221",
                           FontAwesomeIcons.linkedin,
+                          context,
                         ),
-                        horizontalSpace(15),
+                        IconButton(
+                          icon: const Icon(Icons.brightness_4),
+                          onPressed: () {
+                            context.read<ThemeBloc>().add(const ToggleTheme());
+                          },
+                        ),
                       ],
                     ),
                   ),
                   body: Container(
-                    color: Colors.black,
+                    color: Theme.of(context).colorScheme.background,
                     child: page,
                   ),
                 );
@@ -451,7 +497,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       bottom: PreferredSize(
                         preferredSize: const Size(double.infinity, .3),
                         child: Container(
-                          color: const Color.fromARGB(160, 255, 255, 255),
+                          color: Theme.of(context).colorScheme.primary,
                           height: 0.3,
                         ),
                       ),
@@ -462,7 +508,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           Text(
                             'DeependraDDev',
                             style: GoogleFonts.montserrat(
-                              color: Colors.white,
+                              color: Theme.of(context).colorScheme.primary,
                               fontSize: 21,
                               fontWeight: FontWeight.w500,
                             ),
@@ -484,7 +530,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 child: Text(
                                   'About',
                                   style: GoogleFonts.montserrat(
-                                    color: about_color,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     fontSize: 18,
                                   ),
                                 ),
@@ -504,7 +551,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 child: Text(
                                   'Education',
                                   style: GoogleFonts.montserrat(
-                                    color: education_color,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     fontSize: 18,
                                   ),
                                 ),
@@ -524,7 +572,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 child: Text(
                                   'Experience',
                                   style: GoogleFonts.montserrat(
-                                    color: experience_color,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     fontSize: 18,
                                   ),
                                 ),
@@ -544,7 +593,8 @@ class _MyHomePageState extends State<MyHomePage> {
                                 child: Text(
                                   'Connect',
                                   style: GoogleFonts.montserrat(
-                                    color: connect_color,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     fontSize: 18,
                                   ),
                                 ),
@@ -554,12 +604,25 @@ class _MyHomePageState extends State<MyHomePage> {
                           Wrap(
                             children: [
                               iconButtonWithNav(
-                                  "https://github.com/deependraDDev",
-                                  FontAwesomeIcons.github),
-                              horizontalSpace(15),
+                                "https://github.com/deependraDDev",
+                                FontAwesomeIcons.github,
+                                context,
+                              ),
+                              horizontalSpace(10),
                               iconButtonWithNav(
-                                  "https://in.linkedin.com/in/deependra-bahadur-r-b69904221",
-                                  FontAwesomeIcons.linkedin),
+                                "https://in.linkedin.com/in/deependra-bahadur-r-b69904221",
+                                FontAwesomeIcons.linkedin,
+                                context,
+                              ),
+                              horizontalSpace(10),
+                              IconButton(
+                                icon: const Icon(Icons.brightness_4),
+                                onPressed: () {
+                                  context
+                                      .read<ThemeBloc>()
+                                      .add(const ToggleTheme());
+                                },
+                              ),
                             ],
                           ),
                         ],
@@ -567,7 +630,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     ),
                   ),
                   body: Container(
-                    color: Colors.black,
+                    color: Theme.of(context).colorScheme.background,
                     child: page,
                   ),
                 );
