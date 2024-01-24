@@ -87,6 +87,7 @@ class _ConnectState extends State<Connect> {
                               color: Theme.of(context).colorScheme.primary,
                               fontSize: 26,
                               fontWeight: FontWeight.bold,
+                              letterSpacing: .5,
                             ),
                           ),
                         ],
@@ -98,7 +99,7 @@ class _ConnectState extends State<Connect> {
                       Text(
                         'Connect with me through social media and other communication channels.',
                         style: GoogleFonts.montserrat(
-                          color: Colors.grey,
+                          color: Theme.of(context).colorScheme.primary,
                           fontSize: 18,
                           fontWeight: FontWeight.normal,
                         ),
@@ -304,8 +305,8 @@ class _ConnectState extends State<Connect> {
                                 width: 220,
                                 height: 110,
                                 decoration: gradientDecoration(
-                                  const Color(0xFF191970),
-                                  const Color(0xFF6495ED),
+                                  const Color(0xFF00ACC1),
+                                  const Color(0xFF00ACC1),
                                 ),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -333,7 +334,9 @@ class _ConnectState extends State<Connect> {
                                       child: Text(
                                         'deependrabahadurr@gmail.com',
                                         style: GoogleFonts.montserrat(
-                                          color: Colors.grey,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .primary,
                                         ),
                                       ),
                                     ),
@@ -359,8 +362,8 @@ class _ConnectState extends State<Connect> {
                                 width: 220,
                                 height: 110,
                                 decoration: gradientDecoration(
-                                  const Color(0xFF191970),
-                                  const Color(0xFF6495ED),
+                                  const Color(0xFF00ACC1),
+                                  const Color(0xFF00ACC1),
                                 ),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -389,7 +392,9 @@ class _ConnectState extends State<Connect> {
                                       child: Text(
                                         'Deependra Thapa',
                                         style: GoogleFonts.montserrat(
-                                          color: Colors.grey,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .primary,
                                           fontSize: 16,
                                         ),
                                       ),
@@ -424,8 +429,8 @@ class _ConnectState extends State<Connect> {
                                 height: 110,
                                 padding: paddingSymmetricSpace(5, 5),
                                 decoration: gradientDecoration(
-                                  const Color(0xFF191970),
-                                  const Color(0xFF6495ED),
+                                  const Color(0xFF00ACC1),
+                                  const Color(0xFF00ACC1),
                                 ),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -454,7 +459,9 @@ class _ConnectState extends State<Connect> {
                                       child: Text(
                                         'Deependra Thapa',
                                         style: GoogleFonts.montserrat(
-                                          color: Colors.grey,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .primary,
                                           fontSize: 16,
                                         ),
                                       ),
@@ -480,8 +487,8 @@ class _ConnectState extends State<Connect> {
                                 height: 110,
                                 padding: paddingSymmetricSpace(5, 5),
                                 decoration: gradientDecoration(
-                                  const Color(0xFF191970),
-                                  const Color(0xFF6495ED),
+                                  const Color(0xFF00ACC1),
+                                  const Color(0xFF00ACC1),
                                 ),
                                 child: Column(
                                   mainAxisAlignment: MainAxisAlignment.center,
@@ -510,7 +517,9 @@ class _ConnectState extends State<Connect> {
                                       child: Text(
                                         'Deependra Thapa',
                                         style: GoogleFonts.montserrat(
-                                          color: Colors.grey,
+                                          color: Theme.of(context)
+                                              .colorScheme
+                                              .primary,
                                           fontSize: 16,
                                         ),
                                       ),
@@ -550,7 +559,7 @@ class _ConnectState extends State<Connect> {
                       context: context,
                       barrierDismissible: false,
                       builder: (BuildContext context) {
-                      return  Center(
+                        return Center(
                           child: Text(
                             'Thank You! ❤️',
                             style: TextStyle(
@@ -596,7 +605,7 @@ class _ConnectState extends State<Connect> {
                       Text(
                         'Connect with me through social media and other communication channels.',
                         style: GoogleFonts.montserrat(
-                          color: Colors.grey,
+                           color: Theme.of(context).colorScheme.primary,
                           fontSize: 18,
                           fontWeight: FontWeight.normal,
                         ),
@@ -618,13 +627,13 @@ class _ConnectState extends State<Connect> {
                       TextField(
                         keyboardType: TextInputType.name,
                         controller: nameController,
-                        style:  TextStyle(
+                        style: TextStyle(
                           color: Theme.of(context).colorScheme.primary,
                         ),
                         decoration: InputDecoration(
                           errorText: _validate ? "Name Can't Be Empty" : null,
                           hintText: 'Enter Your Name',
-                          hintStyle:  TextStyle(
+                          hintStyle: TextStyle(
                             color: Theme.of(context).colorScheme.primary,
                           ),
                           enabledBorder: const OutlineInputBorder(
@@ -647,13 +656,13 @@ class _ConnectState extends State<Connect> {
                       TextField(
                         keyboardType: TextInputType.name,
                         controller: emailController,
-                        style:  TextStyle(
+                        style: TextStyle(
                           color: Theme.of(context).colorScheme.primary,
                         ),
                         decoration: InputDecoration(
                           errorText: _validate ? "Email Can't Be Empty" : null,
                           hintText: 'Enter Your Email',
-                          hintStyle:  TextStyle(
+                          hintStyle: TextStyle(
                             color: Theme.of(context).colorScheme.primary,
                           ),
                           enabledBorder: const OutlineInputBorder(
@@ -676,14 +685,14 @@ class _ConnectState extends State<Connect> {
                       TextField(
                         keyboardType: TextInputType.name,
                         controller: subjectController,
-                        style:  TextStyle(
+                        style: TextStyle(
                           color: Theme.of(context).colorScheme.primary,
                         ),
                         decoration: InputDecoration(
                           errorText:
                               _validate ? "Subject Can't Be Empty" : null,
                           hintText: 'Subject',
-                          hintStyle:  TextStyle(
+                          hintStyle: TextStyle(
                             color: Theme.of(context).colorScheme.primary,
                           ),
                           enabledBorder: const OutlineInputBorder(
@@ -707,14 +716,14 @@ class _ConnectState extends State<Connect> {
                       TextField(
                         keyboardType: TextInputType.name,
                         controller: messageController,
-                        style:  TextStyle(
+                        style: TextStyle(
                           color: Theme.of(context).colorScheme.primary,
                         ),
                         decoration: InputDecoration(
                           errorText:
                               _validate ? "Message Can't Be Empty" : null,
                           hintText: 'Message',
-                          hintStyle:  TextStyle(
+                          hintStyle: TextStyle(
                             color: Theme.of(context).colorScheme.primary,
                           ),
                           enabledBorder: const OutlineInputBorder(
@@ -797,13 +806,13 @@ class _ConnectState extends State<Connect> {
                               height: 110,
                               padding: paddingSymmetricSpace(5, 5),
                               decoration: gradientDecoration(
-                                const Color(0xFF191970),
-                                const Color(0xFF6495ED),
-                              ),
+                                  const Color(0xFF304FFE), // Dark Blue
+                                  const Color(0xFF00BCD4) // Cyan-Blue
+                                  ),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                   Icon(
+                                  Icon(
                                     Icons.mail,
                                     size: 30,
                                     color:
@@ -824,7 +833,8 @@ class _ConnectState extends State<Connect> {
                                     'deependrabahadurr@gmail.com',
                                     maxLines: 1,
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.grey,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 16,
                                     ),
                                   ),
@@ -848,13 +858,13 @@ class _ConnectState extends State<Connect> {
                               height: 110,
                               padding: paddingSymmetricSpace(5, 5),
                               decoration: gradientDecoration(
-                                const Color(0xFF191970),
-                                const Color(0xFF6495ED),
-                              ),
+                                  const Color(0xFF304FFE), // Dark Blue
+                                  const Color(0xFF00BCD4) // Cyan-Blue
+                                  ),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                   FaIcon(
+                                  FaIcon(
                                     FontAwesomeIcons.facebook,
                                     size: 24,
                                     color:
@@ -874,7 +884,8 @@ class _ConnectState extends State<Connect> {
                                   Text(
                                     'Deependra Thapa',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.grey,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 16,
                                     ),
                                   ),
@@ -903,13 +914,13 @@ class _ConnectState extends State<Connect> {
                               height: 110,
                               padding: paddingSymmetricSpace(5, 5),
                               decoration: gradientDecoration(
-                                const Color(0xFF191970),
-                                const Color(0xFF6495ED),
-                              ),
+                                  const Color(0xFF304FFE), // Dark Blue
+                                  const Color(0xFF00BCD4) // Cyan-Blue
+                                  ),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                   FaIcon(
+                                  FaIcon(
                                     FontAwesomeIcons.linkedin,
                                     size: 24,
                                     color:
@@ -929,7 +940,8 @@ class _ConnectState extends State<Connect> {
                                   Text(
                                     'Deependra Thapa',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.grey,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 16,
                                     ),
                                   ),
@@ -952,13 +964,13 @@ class _ConnectState extends State<Connect> {
                               height: 110,
                               padding: paddingSymmetricSpace(5, 5),
                               decoration: gradientDecoration(
-                                const Color(0xFF191970),
-                                const Color(0xFF6495ED),
-                              ),
+                                  const Color(0xFF304FFE), // Dark Blue
+                                  const Color(0xFF00BCD4) // Cyan-Blue
+                                  ),
                               child: Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 children: [
-                                   FaIcon(
+                                  FaIcon(
                                     FontAwesomeIcons.github,
                                     size: 24,
                                     color:
@@ -978,7 +990,8 @@ class _ConnectState extends State<Connect> {
                                   Text(
                                     'Deependra Thapa',
                                     style: GoogleFonts.montserrat(
-                                      color: Colors.grey,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 16,
                                     ),
                                   ),
@@ -1016,7 +1029,7 @@ class _ConnectState extends State<Connect> {
                       context: context,
                       barrierDismissible: false,
                       builder: (BuildContext context) {
-                        return  Center(
+                        return Center(
                           child: Text(
                             'Thank You! ❤️',
                             style: TextStyle(
@@ -1062,7 +1075,7 @@ class _ConnectState extends State<Connect> {
                       Text(
                         'Connect with me through social media and other communication channels.',
                         style: GoogleFonts.montserrat(
-                          color: Colors.grey,
+                          color: Theme.of(context).colorScheme.primary,
                           fontSize: 20,
                           fontWeight: FontWeight.normal,
                         ),
@@ -1094,7 +1107,7 @@ class _ConnectState extends State<Connect> {
                                 TextField(
                                   keyboardType: TextInputType.name,
                                   controller: nameController,
-                                  style:  TextStyle(
+                                  style: TextStyle(
                                     color:
                                         Theme.of(context).colorScheme.primary,
                                   ),
@@ -1105,7 +1118,7 @@ class _ConnectState extends State<Connect> {
                                     fillColor: Colors.transparent,
                                     filled: true,
                                     hintText: 'Enter Your Name',
-                                    hintStyle:  TextStyle(
+                                    hintStyle: TextStyle(
                                       color:
                                           Theme.of(context).colorScheme.primary,
                                     ),
@@ -1129,7 +1142,7 @@ class _ConnectState extends State<Connect> {
                                 TextField(
                                   keyboardType: TextInputType.name,
                                   controller: emailController,
-                                  style:  TextStyle(
+                                  style: TextStyle(
                                     color:
                                         Theme.of(context).colorScheme.primary,
                                   ),
@@ -1138,7 +1151,7 @@ class _ConnectState extends State<Connect> {
                                         ? "Email Can't Be Empty"
                                         : null,
                                     hintText: 'Enter Your Email',
-                                    hintStyle:  TextStyle(
+                                    hintStyle: TextStyle(
                                       color:
                                           Theme.of(context).colorScheme.primary,
                                     ),
@@ -1161,7 +1174,7 @@ class _ConnectState extends State<Connect> {
                                 TextField(
                                   keyboardType: TextInputType.name,
                                   controller: subjectController,
-                                  style:  TextStyle(
+                                  style: TextStyle(
                                     color:
                                         Theme.of(context).colorScheme.primary,
                                   ),
@@ -1170,7 +1183,7 @@ class _ConnectState extends State<Connect> {
                                         ? "Subject Can't Be Empty"
                                         : null,
                                     hintText: 'Subject',
-                                    hintStyle:  TextStyle(
+                                    hintStyle: TextStyle(
                                       color:
                                           Theme.of(context).colorScheme.primary,
                                     ),
@@ -1193,7 +1206,7 @@ class _ConnectState extends State<Connect> {
                                 TextField(
                                   keyboardType: TextInputType.name,
                                   controller: messageController,
-                                  style:  TextStyle(
+                                  style: TextStyle(
                                     color:
                                         Theme.of(context).colorScheme.primary,
                                   ),
@@ -1202,7 +1215,7 @@ class _ConnectState extends State<Connect> {
                                         ? "Message Can't Be Empty"
                                         : null,
                                     hintText: 'Say Hi!',
-                                    hintStyle:  TextStyle(
+                                    hintStyle: TextStyle(
                                       color:
                                           Theme.of(context).colorScheme.primary,
                                     ),
@@ -1291,14 +1304,15 @@ class _ConnectState extends State<Connect> {
                                       height: 140,
                                       padding: paddingSymmetricSpace(5, 5),
                                       decoration: gradientDecoration(
-                                        const Color(0xFF191970),
-                                        const Color(0xFF6495ED),
-                                      ),
+                                          const Color(
+                                              0xFFFFD600), // Dark Yellow
+                                          const Color(0xFFFFEA00) // Yellow
+                                          ),
                                       child: Column(
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
                                         children: [
-                                           Icon(
+                                          Icon(
                                             Icons.mail,
                                             size: 30,
                                             color: Theme.of(context)
@@ -1320,7 +1334,9 @@ class _ConnectState extends State<Connect> {
                                           Text(
                                             'deependrabahadurr@gmail.com',
                                             style: GoogleFonts.montserrat(
-                                              color: Colors.grey,
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .primary,
                                               fontSize: 16,
                                             ),
                                           ),
@@ -1344,14 +1360,15 @@ class _ConnectState extends State<Connect> {
                                       height: 140,
                                       padding: paddingSymmetricSpace(5, 5),
                                       decoration: gradientDecoration(
-                                        const Color(0xFF191970),
-                                        const Color(0xFF6495ED),
-                                      ),
+                                          const Color(
+                                              0xFFFFD600), // Dark Yellow
+                                          const Color(0xFFFFEA00) // Yellow
+                                          ),
                                       child: Column(
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
                                         children: [
-                                           FaIcon(
+                                          FaIcon(
                                             FontAwesomeIcons.facebook,
                                             size: 30,
                                             color: Theme.of(context)
@@ -1373,7 +1390,9 @@ class _ConnectState extends State<Connect> {
                                           Text(
                                             'Deependra Thapa',
                                             style: GoogleFonts.montserrat(
-                                              color: Colors.grey,
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .primary,
                                               fontSize: 16,
                                             ),
                                           ),
@@ -1401,14 +1420,15 @@ class _ConnectState extends State<Connect> {
                                       height: 140,
                                       padding: paddingSymmetricSpace(5, 5),
                                       decoration: gradientDecoration(
-                                        const Color(0xFF191970),
-                                        const Color(0xFF6495ED),
-                                      ),
+                                          const Color(
+                                              0xFFFFD600), // Dark Yellow
+                                          const Color(0xFFFFEA00) // Yellow
+                                          ),
                                       child: Column(
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
                                         children: [
-                                           FaIcon(
+                                          FaIcon(
                                             FontAwesomeIcons.linkedin,
                                             size: 30,
                                             color: Theme.of(context)
@@ -1430,7 +1450,9 @@ class _ConnectState extends State<Connect> {
                                           Text(
                                             'Deependra Thapa',
                                             style: GoogleFonts.montserrat(
-                                              color: Colors.grey,
+                                              color: Theme.of(context)
+                                                  .colorScheme
+                                                  .primary,
                                               fontSize: 16,
                                             ),
                                           ),
@@ -1454,14 +1476,15 @@ class _ConnectState extends State<Connect> {
                                       height: 140,
                                       padding: paddingSymmetricSpace(5, 5),
                                       decoration: gradientDecoration(
-                                        const Color(0xFF191970),
-                                        const Color(0xFF6495ED),
-                                      ),
+                                          const Color(
+                                              0xFFFFD600), // Dark Yellow
+                                          const Color(0xFFFFEA00) // Yellow
+                                          ),
                                       child: Column(
                                         mainAxisAlignment:
                                             MainAxisAlignment.center,
                                         children: [
-                                           FaIcon(
+                                          FaIcon(
                                             FontAwesomeIcons.github,
                                             size: 30,
                                             color: Theme.of(context)
@@ -1483,7 +1506,9 @@ class _ConnectState extends State<Connect> {
                                           Text(
                                             'Deependra Thapa',
                                             style: GoogleFonts.montserrat(
-                                                color: Colors.grey,
+                                                color: Theme.of(context)
+                                                    .colorScheme
+                                                    .primary,
                                                 fontSize: 16),
                                           ),
                                         ],

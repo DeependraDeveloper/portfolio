@@ -29,9 +29,10 @@ class Experience extends StatelessWidget {
                           TyperAnimatedText(
                             "Experience",
                             textStyle: GoogleFonts.montserrat(
-                              fontSize: 30,
-                              fontWeight: FontWeight.w500,
                               color: Theme.of(context).colorScheme.primary,
+                              fontSize: 26,
+                              fontWeight: FontWeight.bold,
+                              letterSpacing: .5,
                             ),
                           ),
                         ],
@@ -41,18 +42,16 @@ class Experience extends StatelessWidget {
                     verticalSpace(20),
 
                     // Experience Description
-                    FittedBox(
-                      child: Text(
-                        'Explore my professional work and volunteer experience.',
-                        style: GoogleFonts.montserrat(
-                          fontSize: 15,
-                          fontWeight: FontWeight.w300,
-                          color: Colors.grey,
-                        ),
+                    Text(
+                      'Explore my professional work and volunteer experience.',
+                      style: GoogleFonts.montserrat(
+                        color: Theme.of(context).colorScheme.primary,
+                        fontSize: 18,
+                        fontWeight: FontWeight.normal,
                       ),
                     ),
 
-                    verticalSpace(50),
+                    verticalSpace(40),
 
                     // Work Experience
                     FittedBox(
@@ -73,8 +72,8 @@ class Experience extends StatelessWidget {
                       width: 500,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
+                        const Color(0xFF00ACC1),
+                        const Color(0xFF00ACC1),
                       ),
                       child: Row(
                         children: [
@@ -87,7 +86,7 @@ class Experience extends StatelessWidget {
                             ),
                           ),
                           horizontalSpace(20),
-                           Flexible(
+                          Flexible(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -95,7 +94,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     'TING TING',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -105,7 +105,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     'SR BACKEND DEVELOPER',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -113,7 +114,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     '2022 - PRESSENT',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -122,7 +124,8 @@ class Experience extends StatelessWidget {
                                     'Building a scalable backend for the Ting Ting app\n using NodeJS, ExpressJS, MongoDB, and Firebase.',
                                     maxLines: 2,
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       overflow: TextOverflow.ellipsis,
                                     ),
                                   ),
@@ -139,8 +142,8 @@ class Experience extends StatelessWidget {
                       width: 500,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
+                        const Color(0xFF00ACC1),
+                        const Color(0xFF00ACC1),
                       ),
                       child: Row(
                         children: [
@@ -153,7 +156,7 @@ class Experience extends StatelessWidget {
                             ),
                           ),
                           horizontalSpace(20),
-                           Flexible(
+                          Flexible(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -161,7 +164,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     'ROYAL MART',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -171,7 +175,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     'Flutter Developer Intern',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -179,7 +184,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     '2022-2023',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -188,7 +194,8 @@ class Experience extends StatelessWidget {
                                     'Working on the Royal Mart app using Flutter and Firebase.\n Learning about the basics of Flutter and Firebase.',
                                     maxLines: 2,
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -198,7 +205,7 @@ class Experience extends StatelessWidget {
                         ],
                       ),
                     ),
-                    verticalSpace(35),
+                    verticalSpace(30),
                     FittedBox(
                       child: Text(
                         '🌏 Volunteer Experience',
@@ -209,14 +216,14 @@ class Experience extends StatelessWidget {
                         ),
                       ),
                     ),
-                    verticalSpace(35),
+                    verticalSpace(30),
                     Container(
                       padding: paddingSymmetricSpace(20, 20),
                       width: 500,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
+                        const Color(0xFF00ACC1),
+                        const Color(0xFF00ACC1),
                       ),
                       child: Row(
                         children: [
@@ -229,7 +236,7 @@ class Experience extends StatelessWidget {
                             ),
                           ),
                           horizontalSpace(20),
-                           Flexible(
+                          Flexible(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -237,7 +244,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     'NCC',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -247,7 +255,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     'National Cadet Corps',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -255,7 +264,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     '20016-2017',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -263,7 +273,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     'Contributed to the society by participating \n in various social activities and camps.',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -279,8 +290,8 @@ class Experience extends StatelessWidget {
                       width: 500,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
+                        const Color(0xFF00ACC1),
+                        const Color(0xFF00ACC1),
                       ),
                       child: Row(
                         children: [
@@ -293,7 +304,7 @@ class Experience extends StatelessWidget {
                             ),
                           ),
                           horizontalSpace(20),
-                           Flexible(
+                          Flexible(
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
@@ -301,7 +312,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     'Keral Flood Relief',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -311,7 +323,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     'Volunteer',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -319,7 +332,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     '2020-2020',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -327,7 +341,8 @@ class Experience extends StatelessWidget {
                                   child: Text(
                                     'Helped people in Kerala by providing \n food and other essential items.',
                                     style: TextStyle(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ),
@@ -370,7 +385,7 @@ class Experience extends StatelessWidget {
                     Text(
                       'Explore my professional work and volunteer experience.',
                       style: GoogleFonts.montserrat(
-                        color: Colors.grey,
+                        color: Theme.of(context).colorScheme.primary,
                         fontSize: 20,
                         fontWeight: FontWeight.normal,
                       ),
@@ -395,9 +410,9 @@ class Experience extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
-                      ),
+                          const Color(0xFF304FFE), // Dark Blue
+                          const Color(0xFF00BCD4) // Cyan-Blue
+                          ),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -417,7 +432,8 @@ class Experience extends StatelessWidget {
                                 Text(
                                   'TING TING',
                                   style: GoogleFonts.montserrat(
-                                    color: Theme.of(context).colorScheme.primary,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -425,21 +441,24 @@ class Experience extends StatelessWidget {
                                 Text(
                                   'SR BACKEND DEVELOPER',
                                   style: GoogleFonts.montserrat(
-                                    color: Theme.of(context).colorScheme.primary,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                   ),
                                 ),
                                 Text(
                                   '2022 - PRESSENT',
                                   style: GoogleFonts.montserrat(
-                                    color: Theme.of(context).colorScheme.primary,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                   ),
                                 ),
                                 Text(
                                   'Building a scalable backend for the Ting Ting app\n using NodeJS, ExpressJS, MongoDB, and Firebase.',
                                   maxLines: 2,
                                   style: GoogleFonts.montserrat(
-                                      textStyle:  TextStyle(
-                                    color: Theme.of(context).colorScheme.primary,
+                                      textStyle: TextStyle(
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     overflow: TextOverflow.ellipsis,
                                   )),
                                 ),
@@ -455,9 +474,9 @@ class Experience extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
-                      ),
+                          const Color(0xFF304FFE), // Dark Blue
+                          const Color(0xFF00BCD4) // Cyan-Blue
+                          ),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -477,7 +496,8 @@ class Experience extends StatelessWidget {
                                 Text(
                                   'ROYAL MART',
                                   style: GoogleFonts.montserrat(
-                                    color: Theme.of(context).colorScheme.primary,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     fontSize: 20,
                                     fontWeight: FontWeight.bold,
                                   ),
@@ -485,21 +505,24 @@ class Experience extends StatelessWidget {
                                 Text(
                                   'Flutter Developer Intern',
                                   style: GoogleFonts.montserrat(
-                                    color: Theme.of(context).colorScheme.primary,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                   ),
                                 ),
                                 Text(
                                   '2022-2023',
                                   style: GoogleFonts.montserrat(
-                                    color: Theme.of(context).colorScheme.primary,
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                   ),
                                 ),
                                 Text(
                                   'Working on the Royal Mart app using Flutter and Firebase.\n Learning about the basics of Flutter and Firebase.',
                                   maxLines: 2,
                                   style: GoogleFonts.montserrat(
-                                      textStyle:  TextStyle(
-                                    color: Theme.of(context).colorScheme.primary,
+                                      textStyle: TextStyle(
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     overflow: TextOverflow.ellipsis,
                                   )),
                                 )
@@ -510,7 +533,7 @@ class Experience extends StatelessWidget {
                       ),
                     ),
                     verticalSpace(35),
-                     Text(
+                    Text(
                       '🌏 Volunteer Experience',
                       style: TextStyle(
                         color: Theme.of(context).colorScheme.primary,
@@ -524,9 +547,9 @@ class Experience extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
-                      ),
+                          const Color(0xFF304FFE), // Dark Blue
+                          const Color(0xFF00BCD4) // Cyan-Blue
+                          ),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -565,8 +588,9 @@ class Experience extends StatelessWidget {
                               Text(
                                 'Helped to the society by participating \nin various  social activities and camps.',
                                 style: GoogleFonts.montserrat(
-                                  textStyle:  TextStyle(
-                                    color: Theme.of(context).colorScheme.primary,
+                                  textStyle: TextStyle(
+                                    color:
+                                        Theme.of(context).colorScheme.primary,
                                     overflow: TextOverflow.ellipsis,
                                   ),
                                 ),
@@ -582,9 +606,9 @@ class Experience extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
-                      ),
+                          const Color(0xFF304FFE), // Dark Blue
+                          const Color(0xFF00BCD4) // Cyan-Blue
+                          ),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -664,7 +688,7 @@ class Experience extends StatelessWidget {
                     Text(
                       'Explore my professional work and volunteer experience.',
                       style: GoogleFonts.montserrat(
-                        color: Colors.grey,
+                       color: Theme.of(context).colorScheme.primary,
                         fontSize: 20,
                         fontWeight: FontWeight.normal,
                       ),
@@ -692,9 +716,9 @@ class Experience extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.45,
                           height: 180,
                           decoration: gradientDecoration(
-                            const Color(0xFF191970),
-                            const Color(0xFF6495ED),
-                          ),
+                              const Color(0xFFFFD600), // Dark Yellow
+                              const Color(0xFFFFEA00) // Yellow
+                              ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -713,7 +737,8 @@ class Experience extends StatelessWidget {
                                   Text(
                                     'TING TING',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -721,19 +746,22 @@ class Experience extends StatelessWidget {
                                   Text(
                                     'SR BACKEND DEVELOPER',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     '2022 - PRESSENT',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     'Building a scalable backend for the Ting Ting \napp using NodeJS, ExpressJS, MongoDB,\n and Firebase.',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ],
@@ -747,9 +775,9 @@ class Experience extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.45,
                           height: 180,
                           decoration: gradientDecoration(
-                            const Color(0xFF191970),
-                            const Color(0xFF6495ED),
-                          ),
+                              const Color(0xFFFFD600), // Dark Yellow
+                              const Color(0xFFFFEA00) // Yellow
+                              ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -768,7 +796,8 @@ class Experience extends StatelessWidget {
                                   Text(
                                     'ROYAL MART',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -776,19 +805,22 @@ class Experience extends StatelessWidget {
                                   Text(
                                     'Flutter Developer Intern',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     '2022-2023',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     'Working on the Royal Mart app using Flutter \n and Firebase.Learning about \nthe basics of Flutter and Firebase.',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ],
@@ -821,9 +853,9 @@ class Experience extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.45,
                           height: 180,
                           decoration: gradientDecoration(
-                            const Color(0xFF191970),
-                            const Color(0xFF6495ED),
-                          ),
+                              const Color(0xFFFFD600), // Dark Yellow
+                              const Color(0xFFFFEA00) // Yellow
+                              ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -842,7 +874,8 @@ class Experience extends StatelessWidget {
                                   Text(
                                     'NCC',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -850,19 +883,22 @@ class Experience extends StatelessWidget {
                                   Text(
                                     'National Cadet Corps',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     '20016-2017',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     'Contributed to the society by participating \n in various social activities and camps.',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ],
@@ -876,9 +912,9 @@ class Experience extends StatelessWidget {
                           width: MediaQuery.of(context).size.width * 0.45,
                           height: 180,
                           decoration: gradientDecoration(
-                            const Color(0xFF191970),
-                            const Color(0xFF6495ED),
-                          ),
+                              const Color(0xFFFFD600), // Dark Yellow
+                              const Color(0xFFFFEA00) // Yellow
+                              ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -897,7 +933,8 @@ class Experience extends StatelessWidget {
                                   Text(
                                     'Keral Flood Relief',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 20,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -905,19 +942,22 @@ class Experience extends StatelessWidget {
                                   Text(
                                     'Volunteer',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     '2020-2020',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     'Helped people in Kerala by providing \n food and other essential items.',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ],

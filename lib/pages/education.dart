@@ -33,6 +33,7 @@ class Education extends StatelessWidget {
                                 color: Theme.of(context).colorScheme.primary,
                                 fontSize: 26,
                                 fontWeight: FontWeight.bold,
+                                letterSpacing: .5,
                               ),
                             ),
                           ),
@@ -43,18 +44,16 @@ class Education extends StatelessWidget {
                     verticalSpace(20),
 
                     // Education subheading
-                    FittedBox(
-                      child: Text(
-                        'Discover my academic qualifications & institutions.',
-                        style: GoogleFonts.montserrat(
-                          color: Theme.of(context).colorScheme.primary,
-                          fontSize: 17,
-                          fontWeight: FontWeight.normal,
-                        ),
+                    Text(
+                      'Discover my academic qualifications & institutions.',
+                      style: GoogleFonts.montserrat(
+                        color: Theme.of(context).colorScheme.primary,
+                        fontSize: 18,
+                        fontWeight: FontWeight.normal,
                       ),
                     ),
 
-                    verticalSpace(50),
+                    verticalSpace(40),
 
                     // Academic Qualifications heading
                     FittedBox(
@@ -75,8 +74,8 @@ class Education extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
+                        const Color(0xFF00ACC1),
+                        const Color(0xFF00ACC1),
                       ),
                       child: Row(
                         crossAxisAlignment: CrossAxisAlignment.start,
@@ -145,8 +144,8 @@ class Education extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
+                        const Color(0xFF00ACC1),
+                        const Color(0xFF00ACC1),
                       ),
                       child: Row(
                         children: [
@@ -215,8 +214,8 @@ class Education extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
+                        const Color(0xFF00ACC1),
+                        const Color(0xFF00ACC1),
                       ),
                       child: Row(
                         children: [
@@ -284,8 +283,8 @@ class Education extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
+                        const Color(0xFF00ACC1),
+                        const Color(0xFF00ACC1),
                       ),
                       child: Row(
                         children: [
@@ -404,9 +403,9 @@ class Education extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
-                      ),
+                          const Color(0xFF304FFE), // Dark Blue
+                          const Color(0xFF00BCD4) // Cyan-Blue
+                          ),
                       child: Row(
                         children: [
                           ClipRRect(
@@ -460,9 +459,9 @@ class Education extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
-                      ),
+                          const Color(0xFF304FFE), // Dark Blue
+                          const Color(0xFF00BCD4) // Cyan-Blue
+                          ),
                       child: Row(
                         children: [
                           ClipRRect(
@@ -515,9 +514,9 @@ class Education extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
-                      ),
+                          const Color(0xFF304FFE), // Dark Blue
+                          const Color(0xFF00BCD4) // Cyan-Blue
+                          ),
                       child: Row(
                         children: [
                           ClipRRect(
@@ -571,9 +570,9 @@ class Education extends StatelessWidget {
                       width: MediaQuery.of(context).size.width * 0.9,
                       height: 150,
                       decoration: gradientDecoration(
-                        const Color(0xFF191970),
-                        const Color(0xFF6495ED),
-                      ),
+                          const Color(0xFF304FFE), // Dark Blue
+                          const Color(0xFF00BCD4) // Cyan-Blue
+                          ),
                       child: Row(
                         children: [
                           ClipRRect(
@@ -680,9 +679,9 @@ class Education extends StatelessWidget {
                           width: MediaQuery.of(context).size.width / 2 - 50,
                           height: 180,
                           decoration: gradientDecoration(
-                            const Color(0xFF191970),
-                            const Color(0xFF6495ED),
-                          ),
+                              const Color(0xFFFFD600), // Dark Yellow
+                              const Color(0xFFFFEA00) // Yellow
+                              ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
@@ -701,7 +700,8 @@ class Education extends StatelessWidget {
                                   Text(
                                     'Bsc Computer Science',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -709,19 +709,22 @@ class Education extends StatelessWidget {
                                   Text(
                                     'Aims Institute',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     '2018-2021',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     'CGPA: 8.5',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ],
@@ -735,8 +738,8 @@ class Education extends StatelessWidget {
                           width: MediaQuery.of(context).size.width / 2 - 50,
                           height: 180,
                           decoration: gradientDecoration(
-                            const Color(0xFF191970),
-                            const Color(0xFF6495ED),
+                            const Color(0xFFFFD600), // Dark Yellow
+                              const Color(0xFFFFEA00) // Yellow
                           ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -756,7 +759,8 @@ class Education extends StatelessWidget {
                                   Text(
                                     'PCMB',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -764,19 +768,22 @@ class Education extends StatelessWidget {
                                   Text(
                                     'MES College, Bangalore',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     '2016-2018',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     'CGPA: 6.8',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ],
@@ -796,8 +803,8 @@ class Education extends StatelessWidget {
                           width: MediaQuery.of(context).size.width / 2 - 50,
                           height: 180,
                           decoration: gradientDecoration(
-                            const Color(0xFF191970),
-                            const Color(0xFF6495ED),
+                            const Color(0xFFFFD600), // Dark Yellow
+                              const Color(0xFFFFEA00) // Yellow
                           ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -817,7 +824,8 @@ class Education extends StatelessWidget {
                                   Text(
                                     'Primary school',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -825,19 +833,22 @@ class Education extends StatelessWidget {
                                   Text(
                                     'Sri Vidya Kendra, Bangalore',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     '2004-2016',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     'CGPA: 9.5',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ],
@@ -851,8 +862,8 @@ class Education extends StatelessWidget {
                           width: MediaQuery.of(context).size.width / 2 - 50,
                           height: 180,
                           decoration: gradientDecoration(
-                            const Color(0xFF191970),
-                            const Color(0xFF6495ED),
+                            const Color(0xFFFFD600), // Dark Yellow
+                              const Color(0xFFFFEA00) // Yellow
                           ),
                           child: Row(
                             crossAxisAlignment: CrossAxisAlignment.start,
@@ -872,7 +883,8 @@ class Education extends StatelessWidget {
                                   Text(
                                     'Coding Bootcamp',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                       fontSize: 22,
                                       fontWeight: FontWeight.bold,
                                     ),
@@ -880,19 +892,22 @@ class Education extends StatelessWidget {
                                   Text(
                                     'FunctionUp, Bangalore',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     '2022-2022',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                   Text(
                                     'CGPA: 8.5',
                                     style: GoogleFonts.montserrat(
-                                      color: Theme.of(context).colorScheme.primary,
+                                      color:
+                                          Theme.of(context).colorScheme.primary,
                                     ),
                                   ),
                                 ],
