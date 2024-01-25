@@ -1331,13 +1331,15 @@ class _ConnectState extends State<Connect> {
                                             ),
                                           ),
                                           verticalSpace(10),
-                                          Text(
-                                            'deependrabahadurr@gmail.com',
-                                            style: GoogleFonts.montserrat(
-                                              color: Theme.of(context)
-                                                  .colorScheme
-                                                  .primary,
-                                              fontSize: 16,
+                                          FittedBox(
+                                            child: Text(
+                                              'deependrabahadurr@gmail.com',
+                                              style: GoogleFonts.montserrat(
+                                                color: Theme.of(context)
+                                                    .colorScheme
+                                                    .primary,
+                                                fontSize: 16,
+                                              ),
                                             ),
                                           ),
                                         ],
